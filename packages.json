@@ -1,5 +1,5 @@
 {
-  "packagename": {
+  "pluginsdk": {
     "URL": "https://github.com/arcalot/arcaflow-plugin-sdk-go",
     "MainBranch": "main"
   }
