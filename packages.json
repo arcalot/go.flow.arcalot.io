@@ -2,13 +2,5 @@
   "pluginsdk": {
     "URL": "https://github.com/arcalot/arcaflow-plugin-sdk-go",
     "MainBranch": "main"
-  },
-  "assert": {
-    "URL": "https://github.com/arcalot/go-assert",
-    "MainBranch": "main"
-  },
-  "log": {
-    "URL": "https://github.com/arcalot/go-log",
-    "MainBranch": "main"
   }
 }
