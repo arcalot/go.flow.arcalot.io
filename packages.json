@@ -10,5 +10,13 @@
   "expressions": {
     "URL": "https://github.com/arcalot/arcaflow-expressions",
     "MainBranch": "main"
+  },
+  "kubernetesdeployer": {
+    "URL": "https://github.com/arcalot/arcaflow-engine-deployer-kubernetes",
+    "MainBranch": "main"
+  },
+  "dockerdeployer": {
+    "URL": "https://github.com/arcalot/arcaflow-engine-deployer-docker",
+    "MainBranch": "main"
   }
 }
