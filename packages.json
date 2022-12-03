@@ -18,5 +18,9 @@
   "dockerdeployer": {
     "URL": "https://github.com/arcalot/arcaflow-engine-deployer-docker",
     "MainBranch": "main"
+  },
+  "podmandeployer": {
+    "URL": "https://github.com/arcalot/arcaflow-engine-deployer-podman",
+    "MainBranch": "main"
   }
 }
