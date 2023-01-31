@@ -22,5 +22,9 @@
   "podmandeployer": {
     "URL": "https://github.com/arcalot/arcaflow-engine-deployer-podman",
     "MainBranch": "main"
+  },
+  "engine": {
+    "URL": "https://github.com/arcalot/arcaflow-engine",
+    "MainBranch": "main"
   }
 }
