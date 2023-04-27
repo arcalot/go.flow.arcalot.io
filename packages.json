@@ -32,7 +32,7 @@
     "MainBranch": "main"
   },
   "testdeployer": {
-    "URL": "https://github.com/arcalot/arcaflow-engine-testdeployer-impl",
+    "URL": "https://github.com/arcalot/arcaflow-engine-deployer-test-impll",
     "MainBranch": "main"
   }
 }
