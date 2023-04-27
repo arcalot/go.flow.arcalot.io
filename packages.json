@@ -30,5 +30,9 @@
   "docsgen": {
     "URL": "https://github.com/arcalot/arcaflow-docsgen",
     "MainBranch": "main"
+  },
+  "testdeployer": {
+    "URL": "https://github.com/arcalot/arcaflow-engine-deployer-test-impl",
+    "MainBranch": "main"
   }
 }
