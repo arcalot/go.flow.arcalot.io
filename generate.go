@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"html/template"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
@@ -67,16 +66,16 @@ func main() {
 	}
 
 	cnameFile := filepath.Join(ghPagesDir, "CNAME")
-	if err := ioutil.WriteFile(cnameFile, []byte(domainName), 0644); err != nil {
+	if err := os.WriteFile(cnameFile, []byte(domainName), 0644); err != nil {
 		panic(fmt.Errorf("failed to write CNAME file %s (%w)", cnameFile, err))
 	}
 
 	indexFile := filepath.Join(ghPagesDir, "index.html")
-	if err := ioutil.WriteFile(indexFile, []byte(indexFileContents), 0644); err != nil {
+	if err := os.WriteFile(indexFile, []byte(indexFileContents), 0644); err != nil {
 		panic(fmt.Errorf("failed to write index file %s (%w)", indexFile, err))
 	}
 
-	data, err := ioutil.ReadFile("packages.json")
+	data, err := os.ReadFile("packages.json")
 	if err != nil {
 		panic(fmt.Errorf("failed open %s (%w)", "packages.json", err))
 	}

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"io/ioutil"
 	"os"
 	"path"
 	"regexp"
@@ -18,7 +17,7 @@ func TestGenerate(t *testing.T) {
   }
 }`
 
-	if err := ioutil.WriteFile(path.Join(tmpDir, "packages.json"), []byte(testData), 0644); err != nil {
+	if err := os.WriteFile(path.Join(tmpDir, "packages.json"), []byte(testData), 0644); err != nil {
 		t.Fatal(err)
 	}
 	if err := os.Setenv("GITHUB_REPOSITORY_OWNER", "arcalot"); err != nil {
@@ -35,7 +34,7 @@ func TestGenerate(t *testing.T) {
 	}
 	main()
 
-	cnameContents, err := ioutil.ReadFile(path.Join(tmpDir, "gh-pages", "CNAME"))
+	cnameContents, err := os.ReadFile(path.Join(tmpDir, "gh-pages", "CNAME"))
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -44,7 +43,7 @@ func TestGenerate(t *testing.T) {
 	}
 
 	indexFile := path.Join(tmpDir, "gh-pages", "pluginsdk", "index.html")
-	indexContents, err := ioutil.ReadFile(indexFile)
+	indexContents, err := os.ReadFile(indexFile)
 	if err != nil {
 		t.Fatal(err)
 	}
